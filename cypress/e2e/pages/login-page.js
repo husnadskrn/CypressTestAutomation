@@ -15,10 +15,11 @@ class LoginPage{
         return this;
     }
 
-    clickLoginButton(){
+    clickLoginButton() {
         cy.get("button[type='submit']").click();
+        cy.scrollTo('top');
         return this;
-    }
+    }    
 
     errorMessageDisplayedControl(){
         cy.get("[id='error-box-wrapper']").should('be.visible');

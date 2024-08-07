@@ -7,7 +7,7 @@ describe('Login Test', () => {
   const loginPage = new LoginPage();
   const homePage = new HomePage();
 
-  it.only('Login Succesful', () => {
+  it('Login Succesful', () => {
     loginPage.visit()
     .fiilEmail("husnadskrntest@gmail.com")
     .fiilPassword("Deneme6767..hh")
